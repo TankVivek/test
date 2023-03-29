@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+   
+
+    <link rel="stylesheet" href="log_in.css">   
+    
+    <!-- -------------------font Awesome Link------------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+     <center>
+      <style>
+        
+body{
+        background-color: rgb(13, 0, 21);
+        /* background-image: url(https://gist.githubusercontent.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/1804270.jpg); */
+    }
+    
+    /* .cross{
+        position: fixed;
+        top:4%;
+        right:7%;    
+        z-index: 999;
+    }
+    .cross a{
+        cursor: pointer;
+    }
+    .cross i{
+        font-size: 40px;
+        color: #fff;
+        
+        cursor: pointer;
+    } */
+    
+    .em
+    {
+        
+        
+        
+        align-self: center;
+        border-top: 0px solid rgb(255, 255, 255);
+        border-left: 0px;
+        border-right: 0px;   
+        color: white;
+        background-color: rgb(13, 0, 21);
+        
+        
+    }
+    /* .em:hover
+    {
+        hover:focus-visible;
+    } */
+    
+    
+    .or {
+        border: 1px solid rgb(60, 60, 60);
+        color: white;
+        background-color: rgb(51, 51, 51);
+        border-radius: 30px;
+        padding: 6px 6px 6px 6px;
+    }
+    .log {
+        
+        
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(187, 187, 187);
+        color: white;
+        padding: 12px 130px;
+        text-align: center;
+        font-size: 16px;
+        margin: 5px 5px 5px 5px;
+        border-radius: 5px;
+        
+        
+    }
+
+    input
+    {
+        width: 300px;
+        height: 40px;
+        
+        
+    }
+    a
+    {
+        color:rgb(13, 0, 21) ;
+    }
+    .img {
+        position: relative;
+        top: 30px;
+        height: 80px;
+        width: 80px;
+
+        
+  
+    }
+</style>
+    </head>
+    <body>                                                                              
+        
+
+           <img class="img" src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.52.91" alt="">
+            
+        <!-- <a class="cross" href="./index.html"><i class="fa-solid fa-xmark"></i> -->
+
+        </a><br><br><br>
+        
+        
+        <h4 id="loginhead" style="color: rgb(200, 200, 200); font-family: Arial, Helvetica, sans-serif;">Login to ZEE5</h4>
+
+
+            <p id="desc" style="color: rgb(200, 200, 200);  font-family: Georgia, 'Times New Roman', Times, serif">Login to continue enjoyin uninterrupted video and <br>
+                personalised experience.</p>
+                
+                <br> 
+                <br> <br>
+                <div  style="color:white ;">
+                    <button class="or"> or</button> 
+                </div>
+                
+                <br>
+                <br>
+
+
+                <form action="/UserLogin" method="post">
+                
+                <input class="em" type="text" id="mail" name="email" placeholder="Enter Phone or Email ID" required >
+                
+                <br>
+                <br>
+                <input class="em" type="password" id="pass1"  name="pass" placeholder="Enter Password" required>
+                
+                <div class="line"></div>
+                <br>
+                <p ><a style="color: rgb(150, 111, 184) ;" href="https://www.zee5.com/forgotpassword">Forgot Password</a></p>
+                <br>
+                <button class="log" style="color: rgb(187, 187, 187);" onClick="submit2() " type="submit" >Log In</button>
+                <br>
+                <br>
+                <span style="color: white ;">New to ZEE5?</span>  &nbsp; <a style="color:rgb(150, 111, 184) "  href="/registration"><u>Register</u></a>
+                <span class="text-danger">{{loginmsg}}</span>
+            </div>
+            </form>
+        </body> </center>
+        </html>
+      
